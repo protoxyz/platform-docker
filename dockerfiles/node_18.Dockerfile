@@ -60,6 +60,5 @@ ENTRYPOINT ["./docker-entrypoint.sh"]
 EXPOSE 80
 
 ENV ROOT_PATH="apps/api"
-RUN echo "ROOT_PATH: ${ROOT_PATH}"
 
-CMD ls -al ./${ROOT_PATH}/dist && node ./${ROOT_PATH}/dist/app.js
+CMD node ./${ROOT_PATH}/dist/app.js
